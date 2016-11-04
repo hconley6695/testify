@@ -1,6 +1,6 @@
 function fizz (num) {
   // TODO
-  if (num % 15 !== 0) {
+  if (num % 5 && num % 3 !== 0) {
   	return num;
   } else if (num % 15 === 0) {
   	return "FizzBuzz";
