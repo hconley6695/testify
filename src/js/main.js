@@ -1,5 +1,5 @@
 function fizz (num) {
-  // TODO
+
   if (num % 5 && num % 3 !== 0) {
   	return num;
   } else if (num % 15 === 0) {
@@ -12,7 +12,11 @@ function fizz (num) {
 };
 
 function fizzBuzz (start, end) {
-  // Write fizzBuzz here once fizz is finished.
+  
+  for (i = start; i <= end; i++) {
+  	console.log(fizz(i));
+  }
+
 };
 
 export { fizz };
