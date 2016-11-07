@@ -228,28 +228,28 @@ describe('An inventory system ...', function () {
     assert.equal(0, item.quality);
     assert.equal(4, item.sellIn);
   });
-
+//3
   it("test_conjured_item_on_sell_date", function () {
     let item = new GildedRose(0, 10, 'Conjured Mana Cake');
     item.tick();
     assert.equal(6, item.quality);
     assert.equal(-1, item.sellIn);
   });
-
+//4
   it("test_conjured_item_on_sell_date_at_zero_quality", function () {
     let item = new GildedRose(0, 0, 'Conjured Mana Cake');
     item.tick();
     assert.equal(0, item.quality);
     assert.equal(-1, item.sellIn);
   });
-
+//5
   it("test_conjured_item_after_sell_date", function () {
     let item = new GildedRose(-10, 10, 'Conjured Mana Cake');
     item.tick();
     assert.equal(6, item.quality);
     assert.equal(-11, item.sellIn);
   });
-
+//6
   it("test_conjured_item_after_sell_date_at_zero_quality", function () {
     let item = new GildedRose(-10, 0, 'Conjured Mana Cake');
     item.tick();

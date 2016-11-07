@@ -12,7 +12,11 @@ class GildedRose {
           this.quality = this.quality - 1;
         } 
         if (this.name == 'Conjured Mana Cake') {
+          if (this.sellIn > 0){
           this.quality = this.quality - 2;
+          } else {
+            this.quality = this.quality - 3;
+          }
         }
       }
 
@@ -52,7 +56,7 @@ class GildedRose {
           this.quality = this.quality + 1;
         }
       }
-    }
+    } 
   }
 }
 
