@@ -2,7 +2,7 @@ function fizz (num) {
 
   if (num % 5 && num % 3 !== 0) {
   	return num;
-  } else if (num % 5 && num % 3 === 0) {
+  } else if (num % 15 === 0) {
   	return "FizzBuzz";
   } else if (num % 5 === 0) {
   	return "Buzz";
